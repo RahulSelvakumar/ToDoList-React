@@ -17,7 +17,11 @@ function App() {
     }
 
     function deleteItem(id) {
-        console.log(id);
+        setList(preValue => {
+            return (
+                preValue.filter((value,index) => { return id !== index }))
+        })
+        console.log(list);
     }
 
     return (
@@ -32,7 +36,7 @@ function App() {
             <div className="List">
                 <ul>
                     {
-                        list.map((item, key) => { return <li onClick={()=>{deleteItem(key)}}>{item}</li> })
+                        list.map((item, key) => { return <li onClick={() => { deleteItem(key) }}>{item}</li> })
                     }
                 </ul>
             </div>
