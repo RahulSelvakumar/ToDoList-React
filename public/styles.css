@@ -1,0 +1,42 @@
+body{
+    background-color: azure;
+    text-align: center;
+}
+
+heading h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.input input{
+    width: 200px;
+    height:30px;
+    border:2px dashed;
+    border-radius: 2px;
+    margin-right: 5px;
+    font-size: large;
+}
+
+
+.input button{
+    width:35px;
+    height:35px;
+    font-size: larger;
+    border-radius: 5px;
+    border:2px solid grey;
+}
+
+.input button:hover{
+    background-color: dimgray;
+    color: white;
+}
+
+.List{
+    width: 300px;
+    height: 400px;
+    margin: 50px auto;
+    font-size: larger;
+    text-align: left;
+    background-color: beige;
+    border-radius: 5px;
+    padding:10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
